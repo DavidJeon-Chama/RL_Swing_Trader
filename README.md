@@ -8,7 +8,7 @@ A reinforcement learning (PPO) swing-trading agent built for a realistic $100 ca
 
 ## Motivation
 
-When I started university, I met a friend working on reinforcement learning for robotics. He told me that using AI is not something to be ashamed of, but a skill engineers need to develop for the future. Knowing that even Wall Street firms use AI for trading, I decided to build my own RL trading agent. My goal was to see whether an agent could learn swing trading under the realistic limits of a $100 personal cash account, and to learn RL by facing its real problems myself.
+When I started university, I met a friend who was working on RL in robotics. He told me that using AI is not something to be ashamed of, but a skill I should develop for the future of engineering. Inspired by this, I decided to build my own RL agent for stock trading, a field where even Wall Street uses AI. However, considering the gap in money and information between Wall Street and an individual, I chose to build a personal agent with a realistic amount of money ($100). My goal was to build an RL trading agent that produces reasonable results, while learning RL by facing its real-world problems myself.
 
 ## Environment design
 
@@ -67,7 +67,7 @@ At 5.0 the reward scored cash above holding, which trapped 4 of 5 seeds in cash.
 
 ## What I learned
 
-The balance between reward and punishment was the fundamental factor to consider when building an agent. High punishment results in the agent pausing, as it avoids risking punishment rather than earning reward. Also, variance in AI tells me that AI agents have their own tendency and style of following code even when the code is exact same. However, even after increasing the amount of data, buy-and-hold still performed better. This showed me that the problem was the type of information, not the amount of data.
+The balance between reward and punishment was the fundamental factor to consider when building an agent. High punishment results in the agent pausing, as it chooses to avoid punishment rather than risk it for a reward. Also, variance in AI tells me that AI agents have their own tendency and style of following code even when the code is exactly the same. However, even after increasing the amount of data, buy-and-hold still performed better. This showed me that the problem was the type of information, not the amount of data.
 
 ## Limitations
 
@@ -75,6 +75,8 @@ The balance between reward and punishment was the fundamental factor to consider
 - Trades execute at the same day's close; real orders would fill at the next open.
 - All-in / all-out positions only.
 - The stock universe has survivorship bias (all companies still exist today).
+
+Full write-up: [Phase 1 Final Report](PHASE1_REPORT.md)
 
 ## Next: Phase 2
 
